@@ -1,0 +1,84 @@
+html , body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas: 
+    "who-we-are location"
+    "points-of-sale points-of-sale";
+    gap: 25px;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(209, 176, 212, 0.6);
+    box-shadow: 5px 8px 10px rgba(23, 9, 26, 0.1);
+    color: #363535;
+    text-align:center;
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+section > h2 {
+    color: black;
+}
+section > p {
+    text-align: start;
+}
+
+section > ul{
+    text-align: start;
+}
+.points-of-sale li::marker {
+    color: rgb(192, 60, 218); /* Change the bullet color*/
+    font-size: 1.6em; /* Change the bullet size */
+}
+/* Assign areas for grid layout */
+.who-we-are {
+    grid-area: who-we-are;
+}
+.location {
+    grid-area: location;
+}
+.points-of-sale {
+    grid-area: points-of-sale;
+}
+
+/* Responsive for mobile */
+@media (max-width:599px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "who-we-are"
+        "location"
+        "points-of-sale";
+    }
+
+    section {
+        padding: 15px;
+        border-radius: 8px;
+        line-height: 1.2em;
+        font-size: 0.9em;
+    }
+
+    section > h2 {
+        font-size: 1.1em ;
+    }
+
+}
+
+/*  Responsive Tablet*/
+@media ((min-width:600px) and (max-width:768px)) {
+    section {
+        line-height: 1.4em;
+        font-size: 1em;
+    }
+
+}
+
+
