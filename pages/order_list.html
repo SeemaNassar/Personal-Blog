@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samah Kitchen</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/order_list.css">
+</head>
+<body>
+    <header>
+        <!-- header nav  -->
+        <nav>
+            <a href="#">
+                <img src="/assets/samah-logo.png" alt="Logo" class="logo_img">
+            </a>
+            <!-- Unicode character for a "hamburger" icon (☰) -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;  
+            </button>
+            <div class="nav_menu">
+                <ul>
+                    <li class="nav_menu_link"><a href="/index.html">Home</a></li>
+                    <li class="nav_menu_link"><a href="#menu">Menu</a></li>
+                    <li class="nav_menu_link"><a href="order_list.html">Order</a></li>
+                    <li class="nav_menu_link"><a href="#about_us">About Us</a></li>
+                    <li class="nav_menu_link">
+                        <a href="https://www.instagram.com/samah_kitcheen/profilecard/?igsh=YmVqcnRwYTlncjZz" target="_blank">
+                            <img src="/assets/Instagram-Logo.wine.svg" alt="Instagram">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="thank-you">
+            <p>Thank you for your order! Have a nice day.</p>
+        </section>
+        <section class="bill">
+            <h2>Bill Summary</h2>
+            <!-- make bill table using grid -->
+            <div class="bill-details">
+                <div class="header">
+                    <span class="header-item">Item</span>
+                    <span class="header-quantity">Quantity</span>
+                    <span class="header-price">Price</span>
+                </div>
+                <div class="item">
+                    <span class="item-name">Pistachio Brownies</span>
+                    <span class="item-quantity">2</span>
+                    <span class="item-price">₪8.00</span>
+                    
+                </div>
+                <div class="item">
+                    <span class="item-name">Lotus Cinnamon</span>
+                    <span class="item-quantity">1</span>
+                    <span class="item-price">₪7.00</span>
+                </div>
+                <div class="item">
+                    <span class="item-name">Cheesecake</span>
+                    <span class="item-quantity">1</span>
+                    <span class="item-price">₪60.00</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span>₪75.00</span>
+                </div>
+            </div>
+            <button class="pay-button">Pay Now</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Seema Nassar. All rights reserved.</p>
+    </footer>
+    <script>
+        // this simple script for open and colse menu on header
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav_menu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

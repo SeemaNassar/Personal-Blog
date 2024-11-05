@@ -1,0 +1,96 @@
+html , body {
+    height: 100%;
+}
+main{
+    flex: 1;
+}
+/* thanks style */
+.thank-you {
+    text-align: center; 
+    margin: 20px 0;
+    font-size: 1.5em;
+} 
+/* bill section style */
+.bill {
+    background: rgba(209, 176, 212, 0.6);
+    border: 1px solid #a347ad;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.bill > h2 {
+    text-align: center; 
+}
+
+.bill-details{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.header, .item, .total {
+    display: contents; /* Allow grid layout to work seamlessly */
+}
+
+.header-item, .header-quantity, .header-price, .item-name, .item-quantity, .item-price {
+    padding: 10px;
+    border: 1px dashed #c974de;
+    text-align: center;
+}
+
+.total {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    text-align: right;
+}
+
+.pay-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(192, 60, 218);
+    background-color: #efe8f1;
+    border: 1px solid rgb(192, 60, 218);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pay-button:hover  {
+    background-color: rgb(192, 60, 218);
+    color: #efe8f1;
+}
+
+
+/* Responsive for mobile */
+@media (max-width:599px) {
+    .thank-you {
+        font-size: 1.2em;
+    }
+}
+
+/* Responsive for S mobile */
+@media (max-width:365px) {
+    main{
+        font-size: 0.9em;
+    }
+
+    .thank-you {
+        font-size: 1.1em;
+    }  
+}
+/*  End Responsive */
+
+
+
+
+

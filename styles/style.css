@@ -20,9 +20,6 @@ nav {
     margin: auto 0.5em;
     width:60%;
     height: 100%;
-    background-image: url(imgs/samah-logo.png);
-    background-size:cover;
-    overflow: visible;
 }
 
 .nav_menu ul {
@@ -46,6 +43,7 @@ nav {
     padding: 1em;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .nav_menu ul li a img {
@@ -241,6 +239,7 @@ footer {
     color: #383737;
 }
 
+
 /* Responsive for mobile */
 @media (max-width:599px) {
     /* Responsive nav */
@@ -293,7 +292,6 @@ footer {
     /* Responsive nav */
     .nav_menu ul li a {
         font-size: 0.9em;
-        width: 100%;
     }
     .logo_img {
         width:80%;
