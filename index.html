@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samah Kitchen</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- header nav  -->
+        <nav>
+            <a href="#">
+                <img src="assets/samah-logo.png" alt="Logo" class="logo_img">
+            </a>
+            <!-- Unicode character for a "hamburger" icon (☰) -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;  
+            </button>
+            <div class="nav_menu">
+                <ul>
+                    <li class="nav_menu_link"><a href="#">Home</a></li>
+                    <li class="nav_menu_link"><a href="#menu">Menu</a></li>
+                    <li class="nav_menu_link"><a href="Order">Order</a></li>
+                    <li class="nav_menu_link"><a href="#about_us">About Us</a></li>
+                    <li class="nav_menu_link">
+                        <a href="https://www.instagram.com/samah_kitcheen/profilecard/?igsh=YmVqcnRwYTlncjZz" target="_blank">
+                            <img src="assets/Instagram-Logo.wine.svg" alt="Instagram">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- paragraph about us -->
+        <div class="home_content">
+            <p id="about_us">
+               <span>Welcome to our online store,</span>  your destination for deliciously crafted sweets and snacks!
+                 We specialize in a variety of treats like cookies, cinnamon rolls, and maamoul, 
+                 along with savory side dishes such as pastries, kibbeh, and tabbouleh. 
+                 Each item is prepared with love, ensuring top-notch cleanliness and exceptional quality.
+                  Enjoy a delightful experience with every bite!
+            </p>
+        </div>
+        <!-- menu for our dishes contain 2 sections :Sweets , Appetizers-->
+        <div class="menu_content" id="menu">
+            <h2>Sweets</h2>
+            <section>
+                <!-- card is dish with img, name , detailes and add to cart-->
+                <div class="card">
+                    <img src="assets/cookies.jpg" alt="Cookies">
+                    <div class="card_name">Cookies</div>
+                    <div class="card_details">
+                        <p>Deliciously baked cookies with a variety of flavors.</p>
+                        <button class="choose_topping_btn">Choose Filling</button>
+                        <!-- use  checkbox buttons-->
+                        <div class="toppings" style="display: none;">
+                            <label><input type="checkbox" name="topping-cookies" value="trendDubai" checked>
+                                Trend Dubai
+                            </label>
+                            <label><input type="checkbox" name="topping-cookies" value="lotus">
+                                Lotus
+                            </label>
+                            <label><input type="checkbox" name="topping-cookies" value="chocolate">
+                                Chocolate
+                            </label>
+                            <label><input type="checkbox" name="topping-cookies" value="kinder">
+                                Kinder
+                            </label>
+                            <label><input type="checkbox" name="topping-cookies" value="redVelvet">
+                                Red Velvet
+                            </label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <!-- svg for add to cart  -->
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/brownies.jpg" alt="Brownies">
+                    <div class="card_name">Brownies</div>
+                    <div class="card_details">
+                        <p>Rich and fudgy brownies made with premium chocolate.</p>
+                        <button class="choose_topping_btn">Choose Topping</button>
+                        <div class="toppings" style="display: none;">
+                            <label><input type="checkbox" name="topping-brownies" value="pistachio"> Pistachio</label>
+                            <label><input type="checkbox" name="topping-brownies" value="chocolate"> Chocolate</label>
+                            <label><input type="checkbox" name="topping-brownies" value="lotus"> Lotus</label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/cinnamon.jpg" alt="Cinnamon Rolls">
+                    <div class="card_name">Cinnamon Rolls</div>
+                    <div class="card_details">
+                        <p>Soft and fluffy cinnamon rolls with a sweet glaze.</p>
+                        <button class="choose_topping_btn">Choose Topping</button>
+                        <div class="toppings" style="display: none;">
+                            <label><input type="checkbox" name="topping-cinnamon" value="pistachio"> Pistachio</label>
+                            <label><input type="checkbox" name="topping-cinnamon" value="chocolate"> Chocolate</label>
+                            <label><input type="checkbox" name="topping-cinnamon" value="lotus"> Lotus</label>
+                        </div>   
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div>             
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="assets/cheesecake.jpg" alt="Cheesecake">
+                    <div class="card_name">Cheesecake</div>
+                    <div class="card_details">
+                        <p>Creamy cheesecake with a graham cracker crust and various toppings.</p>
+                        <button class="choose_topping_btn">Choose Topping</button>
+                        <div class="toppings" style="display: none;">
+                            <label><input type="checkbox" name="topping-cheesecake" value="pistachio"> Pistachio</label>
+                            <label><input type="checkbox" name="topping-cheesecake" value="chocolate"> Chocolate</label>
+                            <label><input type="checkbox" name="topping-cheesecake" value="lotus"> Lotus</label>
+                            <label><input type="checkbox" name="topping-cheesecake" value="blueberry"> Blueberry</label>
+                            <label><input type="checkbox" name="topping-cheesecake" value="strawberry"> Strawberry</label>
+                        </div>  
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div>          
+                    </div>
+    
+                </div>
+
+                <div class="card">
+                    <img src="assets/donuts.jpg" alt="Donuts">
+                    <div class="card_name">Donuts</div>
+                    <div class="card_details">
+                        <p>Soft and fluffy donuts with various toppings.</p>
+                        <button class="choose_topping_btn">Choose Topping</button>
+                        <div class="toppings" style="display: none;">
+                            <label><input type="checkbox" name="topping-donuts" value="pistachio"> Pistachio</label>
+                            <label><input type="checkbox" name="topping-donuts" value="chocolate"> Chocolate</label>
+                            <label><input type="checkbox" name="topping-donuts" value="lotus"> Lotus</label>
+                        </div>  
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div>         
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/maamoul.jpg" alt="Maamoul">
+                    <div class="card_name">Maamoul</div>
+                    <div class="card_details">
+                        <p>Traditional filled pastries made with dates or nuts, perfect for any occasion.</p>
+                        <button class="choose_Qty_btn">Choose Quantity</button>
+                        <!-- use  radio buttons-->
+                        <div class="quantitys" style="display: none;">
+                            <label><input type="radio" name="qty" value="1">1 Kilo </label>
+                            <label><input type="radio" name="qty" value="2">2 Kilo </label>
+                            <label><input type="radio" name="qty" value="3">3 Kilo </label>
+                            <label><input type="radio" name="qty" value="4">4 Kilo </label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <h2>Appetizers</h2>
+            <section>
+                <div class="card">
+                    <img src="assets/pastries.jpg" alt="Pastries">
+                    <div class="card_name">Pastries</div>
+                    <div class="card_details">
+                        <p>A variety of savory and sweet pastries baked to perfection.</p>
+                        <button class="choose_Qty_btn">Choose Quantity</button>
+                        <div class="quantitys" style="display: none;">
+                            <label><input type="radio" name="qty" value="1">1 Kilo </label>
+                            <label><input type="radio" name="qty" value="2">2 Kilo </label>
+                            <label><input type="radio" name="qty" value="3">3 Kilo </label>
+                            <label><input type="radio" name="qty" value="4">4 Kilo </label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="assets/tabbouleh.jpg" alt="Tabbouleh">
+                    <div class="card_name">Tabbouleh</div>
+                    <div class="card_details">
+                        <p>Fresh and healthy salad with parsley, tomatoes, and a lemon dressing.</p>
+                        <button class="choose_Qty_btn">Choose Quantity</button>
+                        <div class="quantitys" style="display: none;">
+                            <label><input type="radio" name="qty" value="1">1 Box </label>
+                            <label><input type="radio" name="qty" value="2">2 Box </label>
+                            <label><input type="radio" name="qty" value="3">3 Box </label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="assets/yalanji.jpg" alt="Dolma(yalanji)" />
+                    <div class="card_name">Dolma</div>
+                    <div class="card_details">
+                        <p>Stuffed grape leaves filled with rice, herbs, and spices, often served with a drizzle of lemon.</p>
+                        <button class="choose_Qty_btn">Choose Quantity</button>
+                        <div class="quantitys" style="display: none;">
+                            <label><input type="radio" name="qty" value="1">1 Box </label>
+                            <label><input type="radio" name="qty" value="2">2 Box </label>
+                            <label><input type="radio" name="qty" value="3">3 Box </label>
+                        </div>
+                        <div class="price_cart">
+                            <span>₪5.00</span>
+                            <button class="cart_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 0.81h9.72a1 1 0 0 0 1-.81L23 6H6"></path>
+                                </svg>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seema Nassar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Added two simple scripts for additional functionality and convenience.
+        // this simple script for open and colse menu on header
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav_menu');
+            navMenu.classList.toggle('active');
+        });
+        // this simple script for the button on card when i click to choose topping or quantity
+        document.querySelectorAll('.choose_topping_btn , .choose_Qty_btn').forEach(button => {
+            button.addEventListener('click' , () => {
+                const toppingDiv = button.nextElementSibling;
+                toppingDiv.style.display = toppingDiv.style.display === 'flex' ? 'none' : 'flex';
+                button.textContent = toppingDiv.style.display ==='flex' ? 'Cancle' : 'Choose Toppings';
+            })
+        })
+    </script>
+</body>
+</html>

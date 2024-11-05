@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFEAE7;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+/* nav style */
+nav {
+    height: 4.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo_img {
+    margin: auto 0.5em;
+    width:60%;
+    height: 100%;
+    background-image: url(imgs/samah-logo.png);
+    background-size:cover;
+    overflow: visible;
+}
+
+.nav_menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu ul li {
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;   
+}
+
+.nav_menu ul li a {
+    text-decoration: none;
+    color: rgb(192, 60, 218);
+    font-size: 1.1em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu ul li a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
+}
+
+.nav_menu li:hover {
+    background-color: rgba(231, 179, 253, 0.6);
+}
+
+.hamburger {
+    width: 1.87em;
+    height: 1.32em;
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5em; 
+    color: rgb(192, 60, 218);
+    cursor: pointer;
+    margin-right: 0.5em;
+
+}
+/* End nav style */
+/* main style */
+.home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.home_content > p {
+    max-width: 60%;
+    padding: 1.5em;
+    background-color: rgba(255, 245, 235, 0.9); 
+    border-left: 5px solid rgb(192, 60, 218); 
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #5a5a5a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align:start;
+}
+.home_content > p > span {
+    font-weight: bold;
+    color: rgb(192, 60, 218); 
+    font-size: 1.2em;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:25px;
+    border-radius: 20px 20px 0 0;
+    background: rgba(209, 176, 212, 0.6);
+}
+.menu_content > h2 {
+    align-self: center;
+    color: rgb(192, 60, 218);
+    border-bottom: 2px dashed #a45cac; 
+    padding-bottom: 8px; 
+    margin-bottom: -20px; 
+    
+}
+.menu_content > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding:25px;
+
+}
+
+/* card style */
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_name {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(192, 60, 218);
+    text-align: center;
+}
+
+.card_details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    border-radius: 10px;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:hover .card_details {
+    opacity: 1; 
+}
+
+.choose_topping_btn , .choose_Qty_btn{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(192, 60, 218);
+    background-color: #fff;
+    border: 1px solid rgb(192, 60, 218);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.choose_topping_btn:hover , .choose_Qty_btn:hover {
+    background-color: rgb(192, 60, 218);
+    color: #fff;
+}
+
+.toppings , .quantitys{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.toppings label , .quantitys label{
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toppings input[type="checkbox"] , .quantitys input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: rgb(192, 60, 218);
+}
+
+.price_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price_cart > span {
+    font-size: 1.1em;
+    color: #C03CDA;
+}
+
+.cart_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #C03CDA;
+    transition: transform 0.2s ease;
+}
+
+.cart_button:hover {
+    transform: scale(1.1);
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    color: #383737;
+}
+
+/* Responsive for mobile */
+@media (max-width:599px) {
+    /* Responsive nav */
+    .nav_menu ul{
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        background-color: rgba(57, 56, 56, 0.9); 
+        top: 4.2em; 
+        width: 100%; 
+        left: 0;
+        z-index: 1000; 
+        align-items: center;
+        transition: all ease-in-out 0.4s;
+    }
+
+    .nav_menu.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    /* Responsive main */
+    .home_content {
+        padding: 0.5em;
+    }
+    .home_content > p {
+        max-width: 80%;
+        padding: 1em;
+        font-size: 0.8em;
+        line-height: 1.2em;
+       
+    }
+    .home_content > p > span {
+        font-size: 0.9em;
+    }
+}
+/* Responsive for S mobile */
+@media (max-width:365px) {
+    .menu_content {
+        gap: 10px;
+        padding:10px;
+    }
+}
+
+/*  Responsive Tablet*/
+@media ((min-width:600px) and (max-width:768px)) {
+    /* Responsive nav */
+    .nav_menu ul li a {
+        font-size: 0.9em;
+        width: 100%;
+    }
+    .logo_img {
+        width:80%;
+    }
+    /* Responsive main */
+    .home_content {
+        padding: 0.5em;
+    }
+    .home_content > p {
+        max-width: 85%;
+        padding: 0.9em;
+        font-size: 0.9em;
+        line-height: 1.1em;
+       
+    }
+    .home_content > p > span {
+        font-size: 1em;
+    }
+}
+/*  End Responsive */
+
