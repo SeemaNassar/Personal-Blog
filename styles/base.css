@@ -1,0 +1,22 @@
+:root {
+    --primary-color: rgb(192, 60, 218); 
+    --bg-color:rgba(209, 176, 212, 0.6);
+    --secondary-color: #fff; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFEAE7;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 100%;
+}
+html  {
+    height: 100%;
+}
+main{
+    flex: 1;
+}
+

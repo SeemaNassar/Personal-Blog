@@ -37,7 +37,7 @@
         <!-- paragraph about us -->
         <div class="home_content">
             <p id="about_us">
-               <span>Welcome to our online store,</span>  your destination for deliciously crafted sweets and snacks!
+               <b>Welcome to our online store,</b>  your destination for deliciously crafted sweets and snacks!
                  We specialize in a variety of treats like cookies, cinnamon rolls, and maamoul, 
                  along with savory side dishes such as pastries, kibbeh, and tabbouleh. 
                  Each item is prepared with love, ensuring top-notch cleanliness and exceptional quality.
@@ -47,16 +47,19 @@
         <!-- menu for our dishes contain 2 sections :Sweets , Appetizers-->
         <div class="menu_content" id="menu">
             <h2>Sweets</h2>
-            <section>
+            <div class="section_cards">
                 <!-- card is dish with img, name , detailes and add to cart-->
                 <div class="card">
-                    <img src="assets/cookies.jpg" alt="Cookies">
+                    <figure>
+                        <img src="assets/cookies.jpg" alt="Cookies">
+                        <figcaption>Deliciously baked cookies with a variety of flavors.</figcaption>
+                    </figure>
                     <div class="card_name">Cookies</div>
                     <div class="card_details">
                         <p>Deliciously baked cookies with a variety of flavors.</p>
                         <button class="choose_topping_btn">Choose Filling</button>
                         <!-- use  checkbox buttons-->
-                        <div class="toppings" style="display: none;">
+                        <div class="toppings">
                             <label><input type="checkbox" name="topping-cookies" value="trendDubai" checked>
                                 Trend Dubai
                             </label>
@@ -88,12 +91,15 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/brownies.jpg" alt="Brownies">
+                    <figure>
+                        <img src="assets/brownies.jpg" alt="Brownies">
+                        <figcaption>Rich and fudgy brownies made with premium chocolate.</figcaption>
+                    </figure>
                     <div class="card_name">Brownies</div>
                     <div class="card_details">
                         <p>Rich and fudgy brownies made with premium chocolate.</p>
                         <button class="choose_topping_btn">Choose Topping</button>
-                        <div class="toppings" style="display: none;">
+                        <div class="toppings">
                             <label><input type="checkbox" name="topping-brownies" value="pistachio"> Pistachio</label>
                             <label><input type="checkbox" name="topping-brownies" value="chocolate"> Chocolate</label>
                             <label><input type="checkbox" name="topping-brownies" value="lotus"> Lotus</label>
@@ -112,12 +118,15 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/cinnamon.jpg" alt="Cinnamon Rolls">
+                    <figure>
+                        <img src="assets/cinnamon.jpg" alt="Cinnamon Rolls">
+                        <figcaption>Soft and fluffy cinnamon rolls with a sweet glaze.</figcaption>
+                    </figure>
                     <div class="card_name">Cinnamon Rolls</div>
                     <div class="card_details">
                         <p>Soft and fluffy cinnamon rolls with a sweet glaze.</p>
                         <button class="choose_topping_btn">Choose Topping</button>
-                        <div class="toppings" style="display: none;">
+                        <div class="toppings">
                             <label><input type="checkbox" name="topping-cinnamon" value="pistachio"> Pistachio</label>
                             <label><input type="checkbox" name="topping-cinnamon" value="chocolate"> Chocolate</label>
                             <label><input type="checkbox" name="topping-cinnamon" value="lotus"> Lotus</label>
@@ -136,12 +145,15 @@
                 </div>
                 
                 <div class="card">
-                    <img src="assets/cheesecake.jpg" alt="Cheesecake">
+                    <figure>
+                        <img src="assets/cheesecake.jpg" alt="Cheesecake">
+                        <figcaption>Creamy cheesecake with a graham cracker crust and various toppings.</figcaption>
+                    </figure>
                     <div class="card_name">Cheesecake</div>
                     <div class="card_details">
                         <p>Creamy cheesecake with a graham cracker crust and various toppings.</p>
                         <button class="choose_topping_btn">Choose Topping</button>
-                        <div class="toppings" style="display: none;">
+                        <div class="toppings">
                             <label><input type="checkbox" name="topping-cheesecake" value="pistachio"> Pistachio</label>
                             <label><input type="checkbox" name="topping-cheesecake" value="chocolate"> Chocolate</label>
                             <label><input type="checkbox" name="topping-cheesecake" value="lotus"> Lotus</label>
@@ -163,12 +175,15 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/donuts.jpg" alt="Donuts">
+                    <figure>
+                        <img src="assets/donuts.jpg" alt="Donuts">
+                        <figcaption>Soft and fluffy donuts with various toppings.</figcaption>
+                    </figure>
                     <div class="card_name">Donuts</div>
                     <div class="card_details">
                         <p>Soft and fluffy donuts with various toppings.</p>
                         <button class="choose_topping_btn">Choose Topping</button>
-                        <div class="toppings" style="display: none;">
+                        <div class="toppings">
                             <label><input type="checkbox" name="topping-donuts" value="pistachio"> Pistachio</label>
                             <label><input type="checkbox" name="topping-donuts" value="chocolate"> Chocolate</label>
                             <label><input type="checkbox" name="topping-donuts" value="lotus"> Lotus</label>
@@ -187,13 +202,16 @@
                 </div>
     
                 <div class="card">
-                    <img src="assets/maamoul.jpg" alt="Maamoul">
+                    <figure>
+                        <img src="assets/maamoul.jpg" alt="Maamoul">
+                        <figcaption>Traditional filled pastries made with dates or nuts, perfect for any occasion.</figcaption>
+                    </figure>
                     <div class="card_name">Maamoul</div>
                     <div class="card_details">
                         <p>Traditional filled pastries made with dates or nuts, perfect for any occasion.</p>
                         <button class="choose_Qty_btn">Choose Quantity</button>
                         <!-- use  radio buttons-->
-                        <div class="quantitys" style="display: none;">
+                        <div class="quantitys">
                             <label><input type="radio" name="qty" value="1">1 Kilo </label>
                             <label><input type="radio" name="qty" value="2">2 Kilo </label>
                             <label><input type="radio" name="qty" value="3">3 Kilo </label>
@@ -211,17 +229,20 @@
                         </div> 
                     </div>
                 </div>
-            </section>
+            </div>
 
             <h2>Appetizers</h2>
-            <section>
+            <div class="section_cards">
                 <div class="card">
-                    <img src="assets/pastries.jpg" alt="Pastries">
+                    <figure>
+                        <img src="assets/pastries.jpg" alt="Pastries">
+                        <figcaption>A variety of savory and sweet pastries baked to perfection.</figcaption>
+                    </figure>
                     <div class="card_name">Pastries</div>
                     <div class="card_details">
                         <p>A variety of savory and sweet pastries baked to perfection.</p>
                         <button class="choose_Qty_btn">Choose Quantity</button>
-                        <div class="quantitys" style="display: none;">
+                        <div class="quantitys">
                             <label><input type="radio" name="qty" value="1">1 Kilo </label>
                             <label><input type="radio" name="qty" value="2">2 Kilo </label>
                             <label><input type="radio" name="qty" value="3">3 Kilo </label>
@@ -241,12 +262,15 @@
                 </div>
                 
                 <div class="card">
-                    <img src="assets/tabbouleh.jpg" alt="Tabbouleh">
+                    <figure>
+                        <img src="assets/tabbouleh.jpg" alt="Tabbouleh">
+                        <figcaption>Fresh and healthy salad with parsley, tomatoes, and a lemon dressing.</figcaption>
+                    </figure>
                     <div class="card_name">Tabbouleh</div>
                     <div class="card_details">
                         <p>Fresh and healthy salad with parsley, tomatoes, and a lemon dressing.</p>
                         <button class="choose_Qty_btn">Choose Quantity</button>
-                        <div class="quantitys" style="display: none;">
+                        <div class="quantitys">
                             <label><input type="radio" name="qty" value="1">1 Box </label>
                             <label><input type="radio" name="qty" value="2">2 Box </label>
                             <label><input type="radio" name="qty" value="3">3 Box </label>
@@ -265,12 +289,15 @@
                 </div>
                 
                 <div class="card">
-                    <img src="assets/yalanji.jpg" alt="Dolma(yalanji)" />
+                    <figure>
+                        <img src="assets/yalanji.jpg" alt="Dolma(yalanji)">
+                        <figcaption>Stuffed grape leaves filled with rice, herbs, and spices, often served with a drizzle of lemon.</figcaption>
+                    </figure>
                     <div class="card_name">Dolma</div>
                     <div class="card_details">
                         <p>Stuffed grape leaves filled with rice, herbs, and spices, often served with a drizzle of lemon.</p>
                         <button class="choose_Qty_btn">Choose Quantity</button>
-                        <div class="quantitys" style="display: none;">
+                        <div class="quantitys">
                             <label><input type="radio" name="qty" value="1">1 Box </label>
                             <label><input type="radio" name="qty" value="2">2 Box </label>
                             <label><input type="radio" name="qty" value="3">3 Box </label>
@@ -287,11 +314,24 @@
                         </div> 
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+        <div class="social-share">
+            <h3><u>Share this page to:</u></h3>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://samah-kitchen.netlify.app/" target="_blank">
+                <img src="assets/facebook-icon.svg" alt="Share on Facebook">
+            </a>
+            <a href="https://api.whatsapp.com/send?text=https://samah-kitchen.netlify.app/" target="_blank">
+                <img src="assets/whatsapp-icon.svg" alt="Share on WhatsApp">
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://samah-kitchen.netlify.app/" target="_blank">
+                <img src="assets/twitter-icon.svg" alt="Share on Twitter">
+            </a>
+        </div>
+        
     </main>
     <footer>
-        <p>&copy; 2024 Seema Nassar. All rights reserved.</p>
+        <p>&copy; 2024 <i>Seema Nassar. All rights reserved.</i></p>
     </footer>
 
     <script>

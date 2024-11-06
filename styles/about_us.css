@@ -1,6 +1,4 @@
-html , body {
-    height: 100%;
-}
+@import url("base.css");
 
 main {
     flex: 1;
@@ -16,7 +14,7 @@ main {
 section {
     padding: 20px;
     border-radius: 8px;
-    background: rgba(209, 176, 212, 0.6);
+    background: var(--bg-color);
     box-shadow: 5px 8px 10px rgba(23, 9, 26, 0.1);
     color: #363535;
     text-align:center;
@@ -34,8 +32,12 @@ section > p {
 section > ul{
     text-align: start;
 }
+
+blockquote {
+    color: black;
+}
 .points-of-sale li::marker {
-    color: rgb(192, 60, 218); /* Change the bullet color*/
+    color: var(--primary-color); /* Change the bullet color*/
     font-size: 1.6em; /* Change the bullet size */
 }
 /* Assign areas for grid layout */

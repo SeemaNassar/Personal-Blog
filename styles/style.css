@@ -1,74 +1,5 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #EFEAE7;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-/* nav style */
-nav {
-    height: 4.2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.logo_img {
-    margin: auto 0.5em;
-    width:60%;
-    height: 100%;
-}
-
-.nav_menu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav_menu ul li {
-    list-style: none;
-    border-radius: 8px;
-    overflow: hidden;   
-}
-
-.nav_menu ul li a {
-    text-decoration: none;
-    color: rgb(192, 60, 218);
-    font-size: 1.1em;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.nav_menu ul li a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 3px;
-}
-
-.nav_menu li:hover {
-    background-color: rgba(231, 179, 253, 0.6);
-}
-
-.hamburger {
-    width: 1.87em;
-    height: 1.32em;
-    display: none; 
-    background: none;
-    border: none;
-    font-size: 1.5em; 
-    color: rgb(192, 60, 218);
-    cursor: pointer;
-    margin-right: 0.5em;
-
-}
-/* End nav style */
+@import "base.css";
+@import "components.css";
 /* main style */
 .home_content {
     display: flex;
@@ -80,7 +11,7 @@ nav {
     max-width: 60%;
     padding: 1.5em;
     background-color: rgba(255, 245, 235, 0.9); 
-    border-left: 5px solid rgb(192, 60, 218); 
+    border-left: 5px solid var(--primary-color); 
     border-radius: 10px;
     font-size: 1.1em;
     line-height: 1.6em;
@@ -88,9 +19,9 @@ nav {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     text-align:start;
 }
-.home_content > p > span {
-    font-weight: bold;
-    color: rgb(192, 60, 218); 
+.home_content > p > b {
+    
+    color: var(--primary-color); 
     font-size: 1.2em;
 }
 
@@ -100,17 +31,17 @@ nav {
     gap: 20px;
     padding:25px;
     border-radius: 20px 20px 0 0;
-    background: rgba(209, 176, 212, 0.6);
+    background: var(--bg-color);
 }
 .menu_content > h2 {
     align-self: center;
-    color: rgb(192, 60, 218);
+    color: var(--primary-color);
     border-bottom: 2px dashed #a45cac; 
     padding-bottom: 8px; 
     margin-bottom: -20px; 
     
 }
-.menu_content > section {
+.menu_content > .section_cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
@@ -139,7 +70,7 @@ nav {
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
-    color: rgb(192, 60, 218);
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -175,22 +106,22 @@ nav {
 .choose_topping_btn , .choose_Qty_btn{
     padding: 10px 20px;
     font-size: 1em;
-    color: rgb(192, 60, 218);
+    color: var(--primary-color);
     background-color: #fff;
-    border: 1px solid rgb(192, 60, 218);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .choose_topping_btn:hover , .choose_Qty_btn:hover {
-    background-color: rgb(192, 60, 218);
+    background-color: var(--primary-color);
     color: #fff;
 }
 
 .toppings , .quantitys{
     margin-top: 15px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
     align-items: start;
@@ -204,7 +135,7 @@ nav {
 
 .toppings input[type="checkbox"] , .quantitys input[type="checkbox"] {
     margin-right: 5px;
-    accent-color: rgb(192, 60, 218);
+    accent-color: var(--primary-color);
 }
 
 .price_cart {
@@ -216,29 +147,20 @@ nav {
 
 .price_cart > span {
     font-size: 1.1em;
-    color: #C03CDA;
+    color: var(--primary-color);
 }
 
 .cart_button {
     background: none;
     border: none;
     cursor: pointer;
-    color: #C03CDA;
+    color: var(--primary-color);
     transition: transform 0.2s ease;
 }
 
 .cart_button:hover {
     transform: scale(1.1);
 }
-
-/* footer */
-footer {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    color: #383737;
-}
-
 
 /* Responsive for mobile */
 @media (max-width:599px) {
@@ -269,15 +191,21 @@ footer {
         padding: 0.5em;
     }
     .home_content > p {
-        max-width: 80%;
+        max-width: 85%;
         padding: 1em;
-        font-size: 0.8em;
-        line-height: 1.2em;
+        font-size: 1em;
+        line-height: 1.3em;
        
     }
-    .home_content > p > span {
-        font-size: 0.9em;
+    .home_content > p > b {
+        font-size: 1.15em;
     }
+
+    .social-share h3 {
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    
 }
 /* Responsive for S mobile */
 @media (max-width:365px) {
@@ -285,6 +213,11 @@ footer {
         gap: 10px;
         padding:10px;
     }
+    .social-share h3 {
+        margin-right: 5px;
+        font-size: 0.9em;
+    }
+    
 }
 
 /*  Responsive Tablet*/
@@ -312,4 +245,41 @@ footer {
     }
 }
 /*  End Responsive */
+
+.social-share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-share h3 {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.social-share img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-share img:hover {
+    transform: scale(1.1);
+}
+/*  */
+/* General figure styling */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Styling for figcaption within figure */
+figcaption {
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+}
 
