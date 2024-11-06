@@ -1,0 +1,24 @@
+.home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:25px;
+    border-radius: 20px 20px 0 0;
+    background: var(--bg-color);
+}
+
+.menu_content > .section_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding:25px;
+
+}
+
