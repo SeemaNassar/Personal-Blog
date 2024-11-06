@@ -193,17 +193,17 @@
     .home_content > p {
         max-width: 85%;
         padding: 1em;
-        font-size: 1em;
+        font-size: 1.25em;
         line-height: 1.3em;
        
     }
     .home_content > p > b {
-        font-size: 1.15em;
+        font-size: 1.3em;
     }
 
     .social-share h3 {
         margin-right: 10px;
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
 }
